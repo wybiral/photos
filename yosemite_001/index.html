@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Yosemite National Park (001)</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@davywtf">
+        <meta name="twitter:title" content="Yosemite National Park (001)">
+        <meta name="twitter:description" content="A quiet glacial stream flowing from the mountains in Yosemite National Park.">
+        <meta name="twitter:image" content="https://wybiral.github.io/photos/yosemite_001/pano.jpg">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
+        <script>
+window.onload = () => {
+    const viewer = new PhotoSphereViewer.Viewer({
+        container: 'viewer',
+        panorama: 'pano.jpg',
+        description: 'A quiet glacial stream flowing from the mountains in Yosemite National Park.',
+    });
+};
+        </script>
+    </head>
+    <body>
+        <div id="viewer" style="width: 100%; height: 100%;"></div>
+    </body>
+</html>
